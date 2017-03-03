@@ -5,26 +5,29 @@
 }
 
 p, a {
-    color: white;
-    font-size: 20px;
+    font-size: 15px;
+    color: #57565a;
+    line-height: 22px;
 }
 
 body {
+    background-color: #e7f5f9;
     padding: 20px;
-    background-image: url('wood.jpg');
     background-size: cover;
     font-family: 'Pangolin', cursive;
-    color: white;
+    color: #57565a;
+    letter-spacing: 2px;
 }
 .title {
-    text-align: center;
+    color: black;
 }
-.block-bg-gradient {
-    background: linear-gradient(135deg, #cedbe9 0%,#aac5de 17%,#6199c7 34%,#6199c7 34%,#3a84c3 49%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);
+h3 {
+    font-size: 18px;
+}
+.block {
+    text-align: center;
     padding: 15px;
-    margin: 40px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 30px black;
+    margin: 15px 30px;
 }
 .introduction {
     text-align: center;
@@ -32,12 +35,10 @@ body {
     flex-direction: column;
 }
 
-.main {
-    display: flex;
-}
 .introduction-foto img {
     height: 350px;
-    border: 2px solid white
+    border: 2px solid white;
+    border-radius: 50px;
 }
 .introduction-text {
     padding: 20px;
@@ -48,20 +49,15 @@ body {
 }
 
 .project-name {
-    width: auto;
     font-size: 30px;
 }
 .project-description {
-    width: 85%;
-}
-.project-description a,
-.footer a {
-    color: white;
 }
 
 .cube {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 55px;
-	margin-left: 20%;
 	position: relative;
 	width: 150px;
 	height: 150px;
@@ -71,7 +67,7 @@ body {
 	position: absolute;
 	width: 150px;
 	height: 150px;
-	border: 3px solid white;
+	border: 3px solid black;
 }
 
 .front {
@@ -100,16 +96,17 @@ body {
 
 
 @media screen and (min-width: 740px){
-    .introduction {
-        flex-direction: row;
+    p, a {
+        font-size: 23px;
+        line-height: 44px;
     }
-    .cube {
-        margin-left: 45%;
+    body {
+        letter-spacing: 2px;
     }
-    .project-table {
-        flex-direction: row;
+    h3 {
+        font-size: 30px;
     }
-    .project-name {
-        width: 15%;
+    .block {
+        margin: 30px 60px;
     }
 }
